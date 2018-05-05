@@ -1,11 +1,11 @@
 $(document).ready(function(){
     chrome.storage.sync.get("max_volume", function(data){
         value = (data.max_volume !== undefined) ? data.max_volume : 100;
-        changeSettingsVolumeValue("max_volume", data.max_volume)
+        changeSettingsVolumeValue("max_volume", value);
     });
     chrome.storage.sync.get("min_volume", function(data){
         value = (data.min_volume !== undefined) ? data.min_volume : 0;
-        changeSettingsVolumeValue("min_volume", data.min_volume)
+        changeSettingsVolumeValue("min_volume", value);
     });
 });
 
