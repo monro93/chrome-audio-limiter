@@ -27,7 +27,6 @@ function changeSettingsVolumeValue(settingName, settingValue){
     jsonConfig[settingName] = settingValue;
     chrome.storage.sync.set(jsonConfig);
     $("input[name='" + settingName + "'").val(settingValue);
-    $("input[name='" + settingName + "'").val(settingValue);
     console.log(settingName + " changed to " + settingValue);
 }
 
