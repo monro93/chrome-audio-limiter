@@ -3,10 +3,12 @@
     "name": "Audio Limiter",
     "version": "0.1",
     "description": "Chrome extension that let you limit the minimun and maximun volume of outgoing audio.",
+    "permissions": ["storage"],
     "background" : {
-        "scripts": ["background.js"],
+        "scripts": ["/vendor/jquery.min.js", "background.js"],
         "persitent": false
     },
+
     "browser_action": {
         "default_popup": "popup.html"
     }

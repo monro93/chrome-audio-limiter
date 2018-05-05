@@ -3,22 +3,28 @@
     <head>
       <style>
         button {
-          height: 30px;
-          width: 30px;
           outline: none;
+        }
+        body {
+            text-align: center;
         }
       </style>
     </head>
     <body>
         <div>
             <div>
-                <div class="volume-label">Max Volume:</div>
-                <input class="max-volume volume-silder" name="max-volume" type="range" min="0" max="100" step="1" value="100">
+                <button class="active_btn">Activate</button>
+            </div>
+            <div>
+                <div class="volume_label">Max Volume:</div>
+                <input class="max_volume volume_slider" name="max_volume" type="range" min="0" max="100" step="1" value="100">
             </div>
             <div>
                 <div class="volume-label">Min Volume:</div>
-                <input class="min-volume volume-silder" name="min-volume" type="range" min="0" max="100" step="1" value="0">
+                <input class="min_volume volume_slider" name="min_volume" type="range" min="0" max="100" step="1" value="0">
             </div>
         </div>
+        <script type="text/javascript" src="vendor/jquery.min.js"></script>
+        <script type="text/javascript" src="popup.js"></script>
     </body>
   </html>
